@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+   
+    <title>Colour Shock</title>
+
+    <style>
+
+    </style>
+</head>
+
+<body class="bg-gray-900 text-white">
+    <nav
+        class="relative bg-gray-800/50 after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+            <div class="relative flex h-16 items-center justify-between">
+                <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                    <div class="flex shrink-0 items-center">
+                        <i class="fa-solid fa-plug-circle-bolt fa-2xl " style="color: #2046df; "></i>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:block">
+                        <div class="flex space-x-4">
+                            <a href="index.html"
+                                class="rounded-md px-3 py-2 text-med font-medium text-white hover:bg-blue-700">Welcome</a>
+                            <a href="data-manipulation.html"
+                                class="rounded-md px-3 py-2 text-med font-medium text-white hover:bg-blue-700 hover:text-white">Data
+                                Manipulation</a>
+                            <a href="about.html"
+                                class="rounded-md px-3 py-2 text-med font-medium text-white hover:bg-blue-700 hover:text-white">About</a>
+                            <a href="handlebar.html"
+                                class="rounded-md px-3 py-2 text-med font-medium text-white hover:bg-blue-700 hover:text-white">Handlebar Templating</a>
+                                       <a href="stock.html"
+                                class="rounded-md px-3 py-2 text-med font-medium text-white hover:bg-blue-700 hover:text-white">Colour Stock
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="max-w-1200 mx-auto">
+            <header>
+                <h1 class="text-4xl font-bold">Colour Theme Selector</h1>
+                <p class="notes">Create beautiful colour combinations for your projects</p>
+                <div class="optionsNote">
+                    <p>Select up to 4 colours from the palette below. When you have selected 4 colours, click the "Show
+                        Colour Theme" button to display your custom colour theme.</p>
+                </div>
+            </header>
+
+            <div class="colour-table" id="colourTable"></div>
+
+            <p class="selection-limit" id="selectionLimit"></p>
+            <button class="theme-button" id="chooseButton" disabled></button>
+            <div class="theme-display" id="themeDisplay">
+                <h2>Your Colour Theme</h2>
+                <div class="theme-colours" id="themeColours">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800/50 py-8 border-t border-gray-700">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <i class="fa-solid fa-plug-circle-bolt fa-2xl " style="color: #2046df; "></i>
+                    <span class="ml-2 text-xl font-bold">Colour Shock</span>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="index.html" class="text-white hover:text-blue-700">Welcome</a>
+                    <a href="data-manipulation.html" class="text-white hover:text-blue-700">Data Manipulation</a>
+                    <a href="about.html" class="text-white hover:text-blue-700">About</a>
+                    <a href="handlebar.html" class="text-white hover:text-blue-700">Handlebar Templating</a>
+                     <a href="stock.html" class="text-white hover:text-blue-700">Colour Stock</a>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-gray-400 glow">
+                <p > &copy;  Colour Shock. Krisztina Molnar</p>
+                <p id="date"></p>
+            </div>
+        </div>
+    </footer>
+
+   <script src="js/main.js"></script>
+</body>
+
+</html>
