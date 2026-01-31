@@ -5,9 +5,9 @@ Interactive JavaScript website.
 ## Description
 User can create a personal colour template by selecting four colours.
 Dynamic writing to updating webpage content.
-CSS animation, transition
-CSS Framework Tailwind
-Handlebar templating to display data
+CSS animation, transition.
+CSS Framework Tailwind.
+Handlebar templating to display data.
 
 ## Features
 
